@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Loja Virtual</title>
+        
+    </h:head>
+    <h:body>
+        <h:form>
+        <h1>Carrinho de Compras</h1>
+        <p:dataTable value="${carrinhoMB.carrinhos}" var="carrinho"
+            emptyMessage="Nenhum registro encontrado">
+            <p:column headerText="Nome" width="50">
+                #{carrinho.nomeproduto}
+            </p:column>
+          
+            <p:column headerText="Descrição" width="50">
+                #{carrinho.descricao}
+            </p:column>
+            
+            <p:column headerText="Peso" width="50">
+                #{carrinho.peso}
+            </p:column>
+            
+            <p:column headerText="Preço" width="50">
+                #{carrinho.preco}
+            </p:column>    
+            
+            <p:column headerText="Excluir" width="50">
+                <p:commandLink value="Excluir" action="#{carrinhoMB.excluir(carrinho)}"
+                               onclick="if (!confirm('Confirmar a exclusão ?')) return false"/>
+            </p:column>
+        </p:dataTable>
+
+        <p:staticMessage severity="info" summary="Valor: R$" detail="#{carrinhoMB.valores}" style="background: darkseagreen; color: black"/>
+
+        <p:commandButton id="pagamentocpf" value="Pagamento CPF" action="#{carrinhoMB.pagamentoCPF()}"
+                         onclick="if (!confirm('Confirmar a compra ?')) return false"/>
+        <p:commandButton id="pagamentocartao" value="Pagamento Cartão" action="#{carrinhoMB.pagamentoCARTAO()}"
+                         onclick="if (!confirm('Confirmar a compra ?')) return false"/>
+        </h:form>
+    </h:body>
+</html>

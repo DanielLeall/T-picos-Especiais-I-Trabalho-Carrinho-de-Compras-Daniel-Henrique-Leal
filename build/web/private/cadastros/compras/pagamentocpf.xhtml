@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Loja Virtual</title>
+        
+    </h:head>
+    <h:body>
+        <h:form>
+        <h1>Carrinho de Compras</h1>
+        <p:dataTable value="${carrinhoMB.carrinhos}" var="carrinho"
+            emptyMessage="Nenhum registro encontrado">
+            <p:column headerText="Nome" width="50">
+                #{carrinho.nomeproduto}
+            </p:column>
+          
+            <p:column headerText="Descrição" width="50">
+                #{carrinho.descricao}
+            </p:column>
+            
+            <p:column headerText="Peso" width="50">
+                #{carrinho.peso}
+            </p:column>
+            
+            <p:column headerText="Preço" width="50">
+                #{carrinho.preco}
+            </p:column>    
+            
+        </p:dataTable>
+        <p:staticMessage severity="info" summary="Valor: R$" detail="#{carrinhoMB.valores}" style="background: darkseagreen; color: black"/>
+        
+        <p:selectOneButton value="#{selectOneView.option}">
+            <f:selectItem itemLabel="Cartão" itemValue="Xbox One" />
+            <f:selectItem itemLabel="Boleto" itemValue="PS4" />
+        </p:selectOneButton>
+                 
+        <br/>
+        <label>Nome Completo:</label>
+        <p:inputText value="" required="true" requiredMessage="Nome é obrigatoria!"/>
+        
+        <br/>
+        <label>CPF:</label>
+        <p:inputText value="" required="true" requiredMessage="CPF é obrigatoria!"/>
+        
+        <br/>
+        <label>Rua:</label>
+        <p:inputText value="" required="true" requiredMessage="RUA é obrigatoria!"/>
+        
+        <br/>
+        <label>Numero</label>
+        <p:inputText value="" required="true" requiredMessage="Numero é obrigatoria!"/>
+        
+        <br/>
+        <label>Bairro</label>
+        <p:inputText value="" required="true" requiredMessage="Bairro é obrigatoria!"/>
+        
+        <br/>
+        <label>Cidade</label>
+        <p:inputText value="" required="true" requiredMessage="Cidade é obrigatoria!"/>
+        
+        <br/>
+        <label>Estado</label>
+        <p:inputText value="" required="true" requiredMessage="Estado é obrigatoria!"/>
+        
+        <p:commandButton id="concluir" value="Concluir" action="#{carrinhoMB.excluirTodos()}"/>
+        
+        <p:commandButton id="voltar" value="Voltar" action="/index.xhtml"/>
+        </h:form>
+    </h:body>
+</html>

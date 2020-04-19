@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 12px Verdana, Geneva sans-serife;
+}
+.cabecalho{
+    width: 100%;
+    background: #5e1200;
+    padding-top: 10 px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.tituloCabecalho{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.margem{
+    margin: 0;
+    padding: 0;
+    font: 12px Verdana, Geneva sans-serife;
+}
+
+.texto{
+    margin: 0;
+    padding: 0;
+    font: 40px Verdana, Geneva sans-serife;
+    background: #5e1200
+}

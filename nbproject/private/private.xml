@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Daniel/Documents/NetBeansProjects/CarrinhodeCompras/src/java/br/com/carrinhodecompras/service/CarrinhoService.java</file>
+            <file>file:/C:/Users/Daniel/Documents/NetBeansProjects/CarrinhodeCompras/web/private/cadastros/compras/pagamentocpf.xhtml</file>
+            <file>file:/C:/Users/Daniel/Documents/NetBeansProjects/CarrinhodeCompras/src/java/br/com/carrinhodecompras/dao/CarrinhoDao.java</file>
+            <file>file:/C:/Users/Daniel/Documents/NetBeansProjects/CarrinhodeCompras/src/java/br/com/carrinhodecompras/controller/CarrinhoController.java</file>
+            <file>file:/C:/Users/Daniel/Documents/NetBeansProjects/CarrinhodeCompras/web/private/cadastros/compras/list.xhtml</file>
+            <file>file:/C:/Users/Daniel/Documents/NetBeansProjects/CarrinhodeCompras/web/private/cadastros/produto/list.xhtml</file>
+            <file>file:/C:/Users/Daniel/Documents/NetBeansProjects/CarrinhodeCompras/src/java/br/com/carrinhodecompras/controller/ProdutoController.java</file>
+            <file>file:/C:/Users/Daniel/Documents/NetBeansProjects/CarrinhodeCompras/web/private/cadastros/compras/pagamentocartao.xhtml</file>
+            <file>file:/C:/Users/Daniel/Documents/NetBeansProjects/CarrinhodeCompras/src/java/br/com/carrinhodecompras/domain/Carrinho.java</file>
+            <file>file:/C:/Users/Daniel/Documents/NetBeansProjects/CarrinhodeCompras/web/private/cadastros/produto/new.xhtml</file>
+        </group>
+    </open-files>
+</project-private>
